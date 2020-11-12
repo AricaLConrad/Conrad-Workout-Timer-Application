@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282929"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/sprint_button"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:alpha="0.9"
+        android:background="@drawable/race_track"
+        android:text="SPRINT: 30 seconds"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/walk_button"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:alpha="0.9"
+        android:background="@drawable/walking_forest"
+        android:text="WALK: 30 minutes"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sprint_button" />
+
+    <Button
+        android:id="@+id/meditation_button"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:alpha="0.9"
+        android:background="@drawable/meditation_mountain"
+        android:text="MEDITATION: 10 minutes"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walk_button" />
+
+    <Button
+        android:id="@+id/yoga_button"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:alpha="0.9"
+        android:background="@drawable/yoga_sunset"
+        android:text="YOGA: 1 hour"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meditation_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
