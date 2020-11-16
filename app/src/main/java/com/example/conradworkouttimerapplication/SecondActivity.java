@@ -19,12 +19,15 @@ public class SecondActivity extends AppCompatActivity {
         String title = getIntent().getExtras().getString("title");
         Log.i("INFO", "Title received: " + title);
 
-        // This dynamically loads the Timer Fragment.
-        getSupportFragmentManager()
-                .beginTransaction()
-                // Pass in the id of the fragment container and the instance of the fragment.
-                // The Timer Fragment requires the seconds and title variables.
-                .add(R.id.fragment_container, TimerFragment.newInstance(seconds, title))
-                .commit();
+        if (savedInstanceState == null) {
+
+            // This dynamically loads the Timer Fragment.
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    // Pass in the id of the fragment container and the instance of the fragment.
+                    // The Timer Fragment requires the seconds and title variables.
+                    .add(R.id.fragment_container, TimerFragment.newInstance(seconds, title))
+                    .commit();
+        }
     }
 }
